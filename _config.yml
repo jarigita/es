@@ -1,0 +1,197 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Jose Miguel Arigita
+title_separator: "-"
+name: Jose Miguel Arigita
+subtitle: Notas sobre desarrollo de Software, Agile, devOps, cuidar yantener un entorno de produción.
+description: >-
+  Llevo más de 20 años como desarrollador en Madrid.
+  Este blog contiene notas, apuntes, cosas que he ido aprendiendo sobre desarrollo de software, agile, devops, problemas reales manteniendo y cuidando el entorno de producción.
+  
+teaser:
+logo:
+# set by jekyll-github-metadata plugin
+# title: repo name
+# description: repo tagline
+# url: github pages domain
+# baseurl: project name
+repository: jarigita/jarigita.github.io
+
+# jekyll-seo-tag settings
+twitter:
+  username: jarigita
+og_image: /assets/images/avatar.jpg
+social:
+  links:
+    - https://linkedin.com/in/arigita
+    - https://twitter.com/jarigita
+    - https://github.com/jarigita
+#google_site_verification: wZvWB-E-2k1v7HV_pz9J0LT2PEqu0_zB9UfjXukklnY
+
+# analytics
+analytics:
+  provider: google-gtag # false (default), google, google-universal, custom
+  google:
+    tracking_id: UA-167766744-1
+    anonymize_ip: true # true, false (default)
+
+# comments
+comments:
+  provider: disqus
+  disqus:
+    shortname: jarigita
+  utterances:
+    theme: github-light # github-dark
+    issue_term: pathname
+
+# search
+search: true
+search_provider: lunr # lunr (default), algolia, google
+google:
+  search_engine_id: 012049118435335239890:yyutqdlocqn
+
+# github fixed values
+# https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#configuring-jekyll-in-your-github-pages-site
+lsi: false
+safe: true
+source: . # [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Build settings
+github: # to remove github metadata warning: https://github.com/github/pages-gem/issues/399
+  - metadata
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: air # default, air, aqua, contrast, dark, dirt, neon, mint, plum, sunrise
+# Outputting
+permalink: /:categories/:title/
+paginate_path: /page:num/
+paginate: 5 # amount of posts to show
+timezone: Europe/Madrid # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  # github enabled
+  # https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  # github included
+  # https://github.com/github/pages-gem/blob/master/lib/github-pages/dependencies.rb
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+  # github whitelisted
+  # https://github.com/github/pages-gem/blob/master/lib/github-pages/plugins.rb
+  - jekyll-include-cache
+  - jekyll-octicons
+
+author:
+  name: Jose Miguel Arigita
+  avatar: /assets/images/avatar.jpg
+  bio: Llevo más de 20 años como desarrollador en Madrid, con lenguajes Java, C++, python. Con proyectos abiertos(FIWARE), con proyectos maduros(plataforma Internet of Things de Telefónica). Responsable del código de producción.  
+  location: Madrid
+  links:
+    - label: Email
+      icon: fas fa-fw fa-envelope
+      url: mailto:jose.miguel.arigita@gmail.com
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/arigita
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      url: https://twitter.com/jarigita
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/jarigita
+
+footer:
+  links:
+    - label: Email
+      icon: fas fa-fw fa-envelope
+      url: mailto:jose.miguel.arigita@gmail.com
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/arigita
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      url: https://twitter.com/jarigita
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/jarigita
+
+defaults:
+  # _posts
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      categories: [blog]
+      layout: single
+      author_profile: true
+      comments: true
+      read_time: true
+      related: true
+      share: true
+      toc: true
+  # _pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      related: true
+      toc: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
