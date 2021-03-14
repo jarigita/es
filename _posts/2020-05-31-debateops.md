@@ -1,5 +1,10 @@
 ---
 title: Debateops. Por qué este blog.
+header:
+  overlay_image: assets/images/debateops.gif
+  caption: "debateops"
+categories:
+  - debateops
 tags:
   - debateops
   - agile

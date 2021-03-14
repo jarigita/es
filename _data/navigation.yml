@@ -1,9 +1,13 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /posts/
+  - title: "DebateOps"
+    url: /DebateOps/
+  - title: "Blogs"
+    url: /Blogs/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "english"
+    url: https://jarigita.github.io/
