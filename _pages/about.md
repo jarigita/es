@@ -129,7 +129,6 @@ Non-exhaustive lists of my technology skills, from most proficient to least.
 | Deployment            | Docker, Kubernetes, Linux, Travis CI, GitHub Actions                 |
 | Database              | SQL, Oracle, Mongodb, MySQL                                          |
 
-circulo.jpg
 
 
 ## Certificaciones
@@ -142,3 +141,5 @@ circulo.jpg
 | 2018         |   Advanced R Programming      |  Coursera (Universidad Johns Hopkins) |
 | 2016         | Functional programming in Scala |    HablaComputing |
 | 2015-2016    | M101JS:nodejs M102: DBAs M202   | MongoDB University |
+
+![Words](/assets/images/wordsBIG.jpeg).

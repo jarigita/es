@@ -6,17 +6,14 @@ author_profile: true
 comments: true
 ---
 
-Most of my blogs are technical blogs written mainly for my own reference. I'd be happy if any of you find them useful too.
-
-
+La mayoría de los blogs son notas técnicas para acordarme. Espero que a lo mejor os puedan ser útiles. 
 
 <ul>
   {% for post in site.posts %}
-    <img src="/{{post.header.overlay_image}}" alt="{{post.title}}">
+    <figure>
+      <a href="{{post.url}}"><img src="/{{post.header.overlay_image}}" alt="{{post.title}}"></a>
+    </figure>
     {% include archive-single.html %}
   {% endfor %}
 </ul>
-
-## Notebooks:
-- [**Python: assignment, function argument passing, views, and copies**](https://github.com/zengliX/Notebooks/blob/master/python_variable.ipynb)
 
