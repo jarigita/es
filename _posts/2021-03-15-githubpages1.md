@@ -1,7 +1,7 @@
 ---
 title: Crear un blog personal con github pages y jekyll.
 header:
-  overlay_image: assets/images/githubpages.gif
+  overlay_image: /assets/images/githubpages.gif
   caption: "debateops"
 categories:
   - github
