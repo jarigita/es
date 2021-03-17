@@ -1,7 +1,7 @@
 ---
 title: Crear un blog personal con github pages y jekyll.
 header:
-  overlay_image: /assets/images/githubpages.gif
+  overlay_image: assets/images/githubpages.gif
   caption: "debateops"
 categories:
   - github
@@ -11,7 +11,7 @@ tags:
   - jekyll
 ---
 
-# Crear un blog personal con github pages y jekyll.
+# Usamos github pages y jekyll para crear documentación estática tanto personal como de proyectos.
 
 ## Por qué crear un blog
 
@@ -136,7 +136,8 @@ También queremos tener un enlace externo para redirigir a la web personal pero 
 <br>
 para añadirlas en cada post se indica el enlace  **permalink: /DebateOps/** y se añaden al indice de navegación
 en **_data/navigation.yml** hay que poner 
-```
+
+```html
 main:
   - title: "About"
     url: /about/
@@ -152,7 +153,7 @@ Ahora queremos sacar el listado de posts junto con una foto.
 <br>
 Para ello hay que crear otra página con el listado de post
 en _pages creamos otra página **blog_page.md**
-```
+```html
 ---
 title:  "Blogs"
 layout: archive

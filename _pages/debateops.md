@@ -3,7 +3,7 @@ title:  "DebateOps"
 layout: archive
 permalink: /DebateOps/
 header:
-  overlay_image: assets/images/debateops.gif
+  overlay_image: es/assets/images/debateops.gif
   caption: "debateops"
 categories:
   - debateops
